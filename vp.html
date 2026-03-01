@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sikrit</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #fff0f5;
+      text-align: center;
+      padding: 50px;
+    }
+    #letter {
+      cursor: pointer;
+      padding: 20px;
+      border: 2px solid rgb(112, 118, 146);
+      border-radius: 10px;
+      display: inline-block;
+      background-color: #6996e2;
+      transition: transform 0.3s ease;
+    }
+    #letter:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div id="letter" onclick="playSong()">
+    <h1>my dearest mingming,</h1>
+    <p>
+      hi, mingming ku :P panes ka na naman, inaral ang html para zau ;). mag click ka anywhere, may magiccc  
+      nag-play na ba yung music? if yes, then read the rest well. if hindi pa, click mo lang ulit, hehe. 
+    </p>
+  </div>
+
+  <!-- Hidden audio -->
+  <audio id="music">
+    <source src="pwede ba kitang ligawan_  - The Juans (Visualizer).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function playSong() {
+      document.getElementById('music').play();
+    }
+  </script>
+</body>
+</html>
